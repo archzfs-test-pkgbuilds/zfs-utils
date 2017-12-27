@@ -18,7 +18,7 @@ source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.5/zfs-0.7.5
         "zfs-utils.bash-completion-r1"
         "zfs-utils.initcpio.install"
         "zfs-utils.initcpio.hook")
-sha256sums=("SKIP"
+sha256sums=("1b826407418423379ff898c0e6ee0ada59c70754e6085a7663028330d0d8a44a"
             "b60214f70ffffb62ffe489cbfabd2e069d14ed2a391fac0e36f914238394b540"
             "e33adabbe3f2f4866802c9d63c7810c7a42b4df2288d0cdd23376519b15b36e4"
             "b5f87d1d1d10443d8919125a4c139d5f4c579ca4433b2905ee826bb01defa56a")

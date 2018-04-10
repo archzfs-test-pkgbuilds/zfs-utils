@@ -8,7 +8,7 @@
 pkgname="zfs-utils-common"
 
 pkgver=0.7.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Kernel module support files for the Zettabyte File System."
 depends=("")
 makedepends=("git")
@@ -21,7 +21,7 @@ source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.8/zfs-0.7.8
 sha256sums=("70ba0edd72914d4bfc9a9426cf26725e955a9509acbddb6902efb9eebb35f150"
             "b60214f70ffffb62ffe489cbfabd2e069d14ed2a391fac0e36f914238394b540"
             "e33adabbe3f2f4866802c9d63c7810c7a42b4df2288d0cdd23376519b15b36e4"
-            "3eb874cf2cbb6c6a0e1c11a98af54f682d6225667af944b43435aeabafa0112f")
+            "290b18f538badce2eedd4ac4926a579535ec6c887436569fa6ff3685b55776bf")
 license=("CDDL")
 groups=("archzfs-linux")
 provides=("zfs-utils")

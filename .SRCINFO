@@ -7,7 +7,6 @@ pkgbase = zfs-utils-common
 	arch = x86_64
 	groups = archzfs-linux
 	license = CDDL
-	makedepends = git
 	provides = zfs-utils
 	conflicts = zfs-utils-common-git
 	conflicts = zfs-utils-linux-git

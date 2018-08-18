@@ -22,7 +22,7 @@ source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.9/zfs-0.7.9
 sha256sums=("f50ca2441c6abde4fe6b9f54d5583a45813031d6bb72b0011b00fc2683cd9f7a"
             "b60214f70ffffb62ffe489cbfabd2e069d14ed2a391fac0e36f914238394b540"
             "335e309ebf5b74fd8956f5e8805939c37d4008b0bcc3b00be6e7ef1d5b7c1669"
-            "9b8ab728083b3863bd5f63b02372149174da7ea8fe55df5a1489ca44d6ee8695"
+            "60ca3ce382c404c1c97873d6a352d0e99b28e948fde4e3f67d92e05f6eb216f0"
             "29080a84e5d7e36e63c4412b98646043724621245b36e5288f5fed6914da5b68")
 license=("CDDL")
 groups=("archzfs-linux")

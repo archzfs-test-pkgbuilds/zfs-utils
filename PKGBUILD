@@ -14,7 +14,7 @@ depends=()
 makedepends=()
 arch=("x86_64")
 url="http://zfsonlinux.org/"
-source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.9/zfs-0.7.9.tar.gz"
+source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-${pkgver}/zfs-${pkgver}.tar.gz"
         "zfs-utils.bash-completion-r1"
         "zfs-utils.initcpio.install"
         "zfs-utils.initcpio.hook"
@@ -33,17 +33,17 @@ replaces=("zfs-utils-linux", "zfs-utils-linux-lts")
 backup=('etc/zfs/zed.d/zed.rc' 'etc/default/zfs')
 
 build() {
-    cd "${srcdir}/zfs-0.7.9"
+    cd "${srcdir}/zfs-${pkgver}"
     ./autogen.sh
     ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --with-mounthelperdir=/usr/bin \
                 --libdir=/usr/lib --datadir=/usr/share --includedir=/usr/include \
-                --with-udevdir=/lib/udev --libexecdir=/usr/lib/zfs-0.7.9 \
+                --with-udevdir=/lib/udev --libexecdir=/usr/lib/zfs-${pkgver} \
                 --with-config=user --enable-systemd
     make
 }
 
 package() {
-    cd "${srcdir}/zfs-0.7.9"
+    cd "${srcdir}/zfs-${pkgver}"
     make DESTDIR="${pkgdir}" install
     # Remove uneeded files
     rm -r "${pkgdir}"/etc/init.d
